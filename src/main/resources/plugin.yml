@@ -1,0 +1,8 @@
+name: PlaceholderColorManipulator
+version: '1.0'
+main: me.loovcik.pcm.PlaceholderColorManipulator
+api-version: '1.21'
+prefix: PCM
+authors: [ Loovcik ]
+softdepend:
+    - PlaceholderAPI
