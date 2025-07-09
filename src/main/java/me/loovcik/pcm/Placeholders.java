@@ -130,7 +130,6 @@ public class Placeholders extends PlaceholderExpansion
 					}
 					else
 					{
-						ChatHelper.console("format");
 						destinationFormat = ColorManipulator.ColorFormat.valueOf(options.getFirst());
 						placeholderName = options.get(1);
 					}
