@@ -39,10 +39,9 @@ public class ConfigManager extends ConfigurationManager {
 		plugin.saveConfig();
 	}
 
-	public ConfigManager(Plugin plugin) {
-		super(plugin);
-
-		setHeader("""
+	@Override
+	public String header() {
+		return """
 				
 				  (C) 2025 Loovcik
 				==============================================
@@ -53,7 +52,12 @@ public class ConfigManager extends ConfigurationManager {
 				
 				==============================================
 				
-				""");
+				""";
+	}
+
+	public ConfigManager(Plugin plugin) {
+		super(plugin);
+		config.options().copyDefaults(true);
 	}
 
 	public static class CustomPlaceholders {
