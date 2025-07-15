@@ -1,5 +1,6 @@
 package me.loovcik.pcm.managers;
 
+import me.loovcik.core.ChatHelper;
 import org.bukkit.configuration.ConfigurationSection;
 import org.bukkit.plugin.Plugin;
 import me.loovcik.core.managers.ConfigurationManager;
@@ -33,6 +34,7 @@ public class ConfigManager extends ConfigurationManager {
 				}
 
 				custom.placeholders.put(section.toLowerCase(), customPlaceholder);
+				ChatHelper.console("Registered custom placeholder '"+section.toLowerCase()+"'");
 			}
 		}
 
